@@ -3,6 +3,7 @@
 [![CI](https://github.com/philiprehberger/dotnet-deep-clone/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-deep-clone/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.DeepClone.svg)](https://www.nuget.org/packages/Philiprehberger.DeepClone)
 [![License](https://img.shields.io/github/license/philiprehberger/dotnet-deep-clone)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Fast deep cloning using compiled expression trees for nested objects, collections, and circular references.
 
@@ -88,4 +89,4 @@ dotnet build src/Philiprehberger.DeepClone.csproj --configuration Release
 
 ## License
 
-MIT
+[MIT](LICENSE)

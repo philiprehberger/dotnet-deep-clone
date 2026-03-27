@@ -8,7 +8,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>Philiprehberger.DeepClone</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Philip Rehberger</Authors>
     <Description>Fast deep cloning using compiled expression trees for nested objects, collections, and circular references.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
