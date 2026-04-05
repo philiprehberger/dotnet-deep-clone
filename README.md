@@ -44,6 +44,18 @@ clonedTeam.Members[0].Name = "Charlie";
 // original.Members[0].Name is still "Alice"
 ```
 
+### Clone with Property Overrides
+
+```csharp
+var original = new Person { Name = "Alice", Age = 30 };
+var modified = DeepClone.CloneWith(original, p => p.Name = "Bob");
+// modified.Name is "Bob", modified.Age is 30
+// original.Name is still "Alice"
+
+// Or use the extension method
+var modified2 = original.DeepCloneWith(p => p.Age = 25);
+```
+
 ### Circular References
 
 ```csharp
@@ -61,12 +73,14 @@ var clonedTree = node.DeepClone();
 | Method | Description |
 |--------|-------------|
 | `Clone<T>(T obj)` | Create a deep clone of the given object |
+| `CloneWith<T>(T obj, Action<T> configure)` | Deep clone then apply property overrides |
 
 ### Extension Methods
 
 | Method | Description |
 |--------|-------------|
 | `DeepClone<T>(this T obj)` | Extension method for deep cloning any object |
+| `DeepCloneWith<T>(this T obj, Action<T> configure)` | Extension method for deep cloning with property overrides |
 
 ### Supported Types
 
